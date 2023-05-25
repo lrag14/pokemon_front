@@ -21,7 +21,7 @@ const Types = () => {
       <div>Chargement</div>
    ) : (
       <div className="all-type">
-         {data.map((types, index) => {
+         {data.map((types) => {
             return (
                <Link className="type-box" to={`/type/${types.name}`}>
                   {types.name}

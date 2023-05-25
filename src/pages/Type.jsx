@@ -26,7 +26,7 @@ const Type = () => {
       <div>
          <h1 className="title">Type : {data.name}</h1>
          <div className="main-div">
-            {data.pokemon.map((pokemon, index) => {
+            {data.pokemon.map((pokemon) => {
                const url = pokemon.pokemon.url.split('/')[6];
                return (
                   <Link to={`/pokemon/${pokemon.pokemon.name}`}>

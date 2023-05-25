@@ -4,7 +4,7 @@ const Search = ({ search, setSearch }) => {
    return (
       <div>
          <input
-            onChange={(event) => setSearch(event.target.value)}
+            onChange={(data) => setSearch(data.results.name)}
             placeholder="Cherche Ton PoKeMoNgfh"
          />
       </div>
