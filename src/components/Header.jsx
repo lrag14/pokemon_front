@@ -10,6 +10,7 @@ const Header = () => {
          <div className="right-header">
             <Link to={'/pokemons'}>Pokemons</Link>
             <Link to={'/types'}>Types</Link>
+            <Link to={'/habitats'}>Habitats</Link>
          </div>
       </div>
    );

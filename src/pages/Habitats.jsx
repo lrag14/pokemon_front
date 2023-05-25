@@ -2,15 +2,14 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const Types = () => {
+const Habitats = () => {
    const [data, setData] = useState(null);
    const [loading, setLoading] = useState(true);
 
    const fetchData = async () => {
-      const response = await axios.get('https://pokeapi.co/api/v2/type');
-      // const response = await axios.get(
-      //    'https://pokeapi.co/api/v2/pokemon-habitat'
-      // );
+      const response = await axios.get(
+         'https://pokeapi.co/api/v2/pokemon-habitat'
+      );
       console.log(response.data);
       setData(response.data.results);
       setLoading(false);
@@ -24,7 +23,7 @@ const Types = () => {
       <div>Loading...</div>
    ) : (
       <div>
-         <h1 className="title">Types</h1>
+         <h1 className="title">Habitas</h1>
          <div className="all-type">
             {data.map((types) => {
                return (
@@ -41,4 +40,4 @@ const Types = () => {
    );
 };
 
-export default Types;
+export default Habitats;
