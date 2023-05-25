@@ -1,0 +1,131 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: "Nintendo U", sans-serif;
+      background: #ed1a25;
+}
+
+a:link {
+      color: black;
+}
+
+a:visited {
+      color: black;
+}
+
+.container {
+      background: white;
+      margin: 0 auto;
+      max-width: 1024px;
+}
+
+.header {
+      height: 6rem;
+      border-bottom: 3px solid #ed1a25;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* background: lightgray; */
+      padding: 1rem 0.5rem;
+}
+
+.header img {
+      width: 120px;
+}
+
+.header .right-header {
+      display: flex;
+      gap: 15px;
+}
+
+.header .right-header a {
+      font-size: 1.2rem;
+}
+
+main {
+      min-height: calc(100vh - 6rem);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.title {
+      text-align: center;
+      padding: 2rem 0;
+}
+.pagination{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:0.4rem;
+      margin:0.4rem;
+}
+.pagination > button{
+         padding:0.4rem;
+   margin-left:3em;
+      margin-right:3em;
+}
+
+.pagination > p{
+font-size: 3em;
+
+}
+.link-card {
+      border: black 2px solid;
+      padding: 0.4rem;
+      border-radius: 5px;
+      text-align: center;
+
+      text-decoration: none;
+}
+
+.link-card img {
+      height: 100px;
+      width: 80px;
+      object-fit: cover;
+}
+
+.main-div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+}
+
+.type-box {
+      padding: 5px 5px;
+      border-radius: 8px;
+
+      color: white;
+      border: 3px solid black;
+      margin-bottom: 10px;
+}
+
+.all-type {
+      display: flex;
+      width: 1024px;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
+.type-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.pokemonn {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+}
+
+a {
+      text-decoration: none;
+}
