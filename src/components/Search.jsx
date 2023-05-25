@@ -1,6 +1,6 @@
-export const Search = ({ search, setSearch }) => {
+const Search = ({ search, setSearch }) => {
    const handleSearchChange = (event) => {
-      setSearch(data.target.value); // Met à jour la valeur de recherche lors de la saisie
+      setSearch(event.target.value); // Met à jour la valeur de recherche lors de la saisie
    };
 
    return (
@@ -14,3 +14,4 @@ export const Search = ({ search, setSearch }) => {
       </div>
    );
 };
+export default Search;

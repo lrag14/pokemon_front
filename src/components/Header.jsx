@@ -11,6 +11,7 @@ const Header = () => {
             <Link to={'/pokemons'}>Pokemons</Link>
             <Link to={'/types'}>Types</Link>
             <Link to={'/habitats'}>Habitats</Link>
+            <Link to={'/natures'}>Natures</Link>
          </div>
       </div>
    );

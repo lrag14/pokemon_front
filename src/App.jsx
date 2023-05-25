@@ -7,6 +7,9 @@ import Pokemons from './pages/Pokemons';
 import Type from './pages/Type';
 import Types from './pages/Types';
 import Habitats from './pages/Habitats.jsx';
+import Habitat from './pages/Habitat.jsx';
+import Natures from './pages/Natures.jsx';
+import Nature from './pages/Nature.jsx';
 
 function App() {
    return (
@@ -22,6 +25,9 @@ function App() {
                   <Route path="/pokemons" element={<Pokemons />} />
                   <Route path="/types" element={<Types />} />
                   <Route path="/habitats" element={<Habitats />} />
+                  <Route path="/habitat/:idOrName" element={<Habitat />} />
+                  <Route path="/natures" element={<Natures />} />
+                  <Route path="/nature/:idOrName" element={<Nature />} />
                </Routes>
             </main>
          </div>

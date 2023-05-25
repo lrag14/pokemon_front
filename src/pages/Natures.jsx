@@ -2,14 +2,12 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const Habitats = () => {
+const Natures = () => {
    const [data, setData] = useState(null);
    const [loading, setLoading] = useState(true);
 
    const fetchData = async () => {
-      const response = await axios.get(
-         'https://pokeapi.co/api/v2/pokemon-habitat'
-      );
+      const response = await axios.get('https://pokeapi.co/api/v2/nature/');
       console.log(response.data);
       setData(response.data.results);
       setLoading(false);
@@ -23,13 +21,13 @@ const Habitats = () => {
       <div>Loading...</div>
    ) : (
       <div>
-         <h1 className="title">Habitas</h1>
+         <h1 className="title">Natures</h1>
          <div className="all-type">
             {data.map((types) => {
                return (
                   <Link
                      className="type-box"
-                     to={`/habitat/${types.name}`}
+                     // to={`/nature/${types.name}`}
                      key={types.name}>
                      {types.name}
                   </Link>
@@ -40,4 +38,4 @@ const Habitats = () => {
    );
 };
 
-export default Habitats;
+export default Natures;
